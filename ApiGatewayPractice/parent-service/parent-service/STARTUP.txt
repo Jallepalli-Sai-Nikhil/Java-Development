@@ -1,0 +1,61 @@
+PARENT pom
+------------------------------------------------
+- Must have spring-boot-starter-parent
+<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.0.5</version>
+        <relativePath/>  <!-- look up parent from repository, not local path -->
+</parent>
+
+- <packaging>pom</packaging>
+- GAV defined
+- defined children modules
+<modules>
+        <module>eureka-server</module>
+        <module>user-service</module>
+        <module>order-service</module>
+</modules>
+
+- PROPERTIES — shared across ALL children automatically
+               Java version must match Spring Boot 4.x requirement (Java 17+)
+
+<properties>
+        <java.version>21</java.version>
+        <spring-cloud.version>2025.0.0</spring-cloud.version>
+</properties>
+
+<dependencyManagement>
+        <dependencies>
+            <!-- Spring Cloud BOM (Bill of Materials)
+                 Imports a curated set of Spring Cloud dependency versions.
+                 type=pom + scope=import is the standard BOM import pattern. -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>  <!-- not transitive to dependents of children -->
+</dependency>
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CHILDREN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+<parent>
+        <groupId>com.demo</groupId>
+        <artifactId>parent-service</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
