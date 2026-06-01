@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-microservice
+
+eureka:
+  client:
+    register-with-eureka: false # todo: Eureka server should not register itself
+    fetch-registry: false # todo: Eureka server should not call registry
+  server:
+    wait-time-in-ms-when-sync-empty: 0 # todo: Start immediately without waiting

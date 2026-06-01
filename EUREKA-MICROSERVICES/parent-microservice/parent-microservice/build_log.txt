@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 74, column 12
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 39, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa-test:jar is missing. @ line 54, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 59, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 64, column 15
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 80, column 12
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 45, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa-test:jar is missing. @ line 60, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 65, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 70, column 15
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 65, column 12
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 36, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 50, column 15
+[ERROR] 'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 55, column 15
+[WARNING] 'build.plugins.plugin.version' for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 38, column 21
+ @ 
+[ERROR] The build could not read 3 projects -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.example:user-microservice:0.0.1-SNAPSHOT (C:\Users\nikhi\Desktop\EUREKA-MICROSERVICES\parent-microservice\parent-microservice\user-microservice\pom.xml) has 4 errors
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 39, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa-test:jar is missing. @ line 54, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 59, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 64, column 15
+[ERROR]   
+[ERROR]   The project com.example:order-microservice:0.0.1-SNAPSHOT (C:\Users\nikhi\Desktop\EUREKA-MICROSERVICES\parent-microservice\parent-microservice\order-microservice\pom.xml) has 4 errors
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 45, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-data-jpa-test:jar is missing. @ line 60, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 65, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 70, column 15
+[ERROR]   
+[ERROR]   The project com.example:discovery-microservice:0.0.1-SNAPSHOT (C:\Users\nikhi\Desktop\EUREKA-MICROSERVICES\parent-microservice\parent-microservice\discovery-microservice\pom.xml) has 3 errors
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc:jar is missing. @ line 36, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-validation-test:jar is missing. @ line 50, column 15
+[ERROR]     'dependencies.dependency.version' for org.springframework.boot:spring-boot-starter-webmvc-test:jar is missing. @ line 55, column 15
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException

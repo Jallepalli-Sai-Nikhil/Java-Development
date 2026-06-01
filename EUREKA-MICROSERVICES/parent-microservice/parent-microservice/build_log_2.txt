@@ -1,0 +1,16 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] 'modelVersion' is missing. @ line 5, column 76
+[ERROR] 'modelVersion' is missing. @ line 5, column 76
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.example:parent-microservice:0.0.1-SNAPSHOT (C:\Users\nikhi\Desktop\EUREKA-MICROSERVICES\parent-microservice\parent-microservice\pom.xml) has 2 errors
+[ERROR]     'modelVersion' is missing. @ line 5, column 76
+[ERROR]     'modelVersion' is missing. @ line 5, column 76
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException

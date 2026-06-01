@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/user_test}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root123}
+
+  jpa:
+    show-sql: true
